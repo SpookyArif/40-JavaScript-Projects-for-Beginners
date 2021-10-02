@@ -1,0 +1,41 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+h1 {
+	background-color: #fff;
+	padding: 1rem;
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+button {
+	font-size: 1.6rem;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 0;
+	box-shadow: 2px 2px 5px 2px rgba($color: #000000, $alpha: 0.6);
+	transition: all 0.2s;
+	padding: 1rem 2rem;
+	cursor: pointer;
+
+	&:active {
+		transform: scale(0.98);
+	}
+}

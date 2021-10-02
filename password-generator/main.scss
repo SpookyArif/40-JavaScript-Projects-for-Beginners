@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #5DADE2;
+}
+
+.container {
+
+
+	&-pass {
+		width: 35rem;
+		height: 4rem;
+		border-radius: 5px;
+		background-color: #fff;
+		display: flex;
+
+		input {
+			flex: 1;
+			padding: 5px 1rem;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			letter-spacing: 1.5px;
+			font-size: 1.5rem;
+			color: #333;
+			border: none;
+			outline: none;
+
+			&::placeholder {
+				font-size: 1.5rem;
+				letter-spacing: 1.5px;
+			}
+		}
+
+		i {
+			display: inline-block;
+			width: 3rem;
+			align-self: center;
+			text-align: center;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+	}
+
+	&-gnr {
+		width: 35rem;
+		height: 4rem;
+		border-radius: 5px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1rem;
+
+		input {
+			flex: 1;
+			padding: 5px 1rem;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border: none;
+			outline: none;
+			font-size: 1.5rem;
+			letter-spacing: 1.5px;
+			color: #333;
+		}
+
+		i {
+			display: inline-block;
+			width: 3rem;
+			align-self: center;
+			text-align: center;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+	}
+}

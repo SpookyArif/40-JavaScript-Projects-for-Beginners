@@ -1,0 +1,45 @@
+body {
+	background-image: linear-gradient(to right, #da9a70, #afadaa);
+	display: flex;
+	justify-content: center;
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.container {
+	width: 650px;
+	height: 350px;
+	background-color: #00ffff;
+	margin: auto;
+	border-radius: 30px;
+	padding: 20px;
+
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 20px;
+	background: #0000ff;
+	padding: 10px 0;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.weekday {
+	text-align: center;
+}
+
+span {
+	font-size: 50px;
+	color: #dd5800;
+	font-weight: 800;
+}
+
+p {
+	font-size: 70px;
+	display: inline-block;
+	color: brown;
+}

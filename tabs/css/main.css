@@ -1,0 +1,101 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.container {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tab-button {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tab-button button {
+  background-color: #9a9aaf;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tab-button button i {
+  color: blueviolet;
+}
+.tab-button button:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.tab-content {
+  display: flex;
+  height: 20rem;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.tab-content .left {
+  width: 40%;
+  height: 100%;
+}
+.tab-content .left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tab-content .right {
+  flex: 1;
+  background-color: #333;
+  padding: 1rem;
+}
+.tab-content .right h1 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.tab-content .right p {
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: #fff;
+}
+.tab-content .right button {
+  margin-top: 2rem;
+  border: 0;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+.tab-content .right button:active {
+  transform: scale(0.95);
+}
+
+.btn--active {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content--active {
+  display: flex;
+}

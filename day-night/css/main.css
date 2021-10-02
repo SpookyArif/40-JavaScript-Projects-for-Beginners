@@ -1,0 +1,93 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: #000;
+  --secondary-bg: #ffff;
+  --primary-font-color: #000;
+  --secondary-font-color: #fff;
+}
+
+html {
+  transition: all 0.6s;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--secondary-bg);
+  color: var(--primary-font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--primary-font-color);
+  margin-bottom: 2rem;
+}
+
+.box {
+  width: 50%;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+
+.btn-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  overflow: hidden;
+  height: 2.5rem;
+  width: 7rem;
+  border: 3px solid blueviolet;
+  background-color: var(--primary-bg);
+  border-radius: 3rem;
+}
+.btn-container .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0rem 0.7rem;
+  cursor: pointer;
+}
+.btn-container .btns span i {
+  color: var(--secondary-font-color);
+}
+.btn-container .toggle {
+  width: 50%;
+  height: 100%;
+  background-color: blueviolet;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  background-color: var(--primary-bg);
+  color: var(--secondary-font-color);
+  border: 0;
+  cursor: pointer;
+}
+
+html.dark {
+  --primary-bg: #ffff;
+  --secondary-bg: #000;
+  --primary-font-color: #fff;
+  --secondary-font-color: #000;
+}
+
+html.dark .toggle {
+  left: 50%;
+}

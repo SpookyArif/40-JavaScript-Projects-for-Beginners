@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #fdfdfd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 40rem;
+	margin-top: 2rem;
+
+	.input-container {
+		input {
+			width: 100%;
+			padding: 1rem;
+		}
+	}
+
+	.todo-container {
+		.content {
+			background-color: #1d1d1d;
+			padding: 1rem;
+			color: #fff;
+			margin: 1rem 0;
+			position: relative;
+			padding-top: 3rem;
+
+			.close {
+				position: absolute;
+				right: 1rem;
+				top: 1rem;
+				width: 2rem;
+				height: 2rem;
+				background-color: #555;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: all 0.2s;
+				cursor: pointer;
+
+				&:hover {
+					background-color: #f00;
+				}
+			}
+
+			.work {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}

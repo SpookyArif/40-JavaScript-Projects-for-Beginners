@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-image: linear-gradient(to right, #fdfdfd, #f7aa46);
+	font-family: 'Oswald',
+		sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(211, 181, 181);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 20px;
+	color: white;
+	font-size: 24px;
+}
+
+.logo {
+	font-size: 25px;
+}
+
+
+ul {
+	display: flex;
+	list-style: none;
+	cursor: pointer;
+}
+
+li {
+	margin: 0 20px;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.cart {
+	position: relative;
+}
+
+.show-cart {
+	position: absolute;
+	width: 500px;
+	background-color: #999;
+	top: 65px;
+	right: -20px;
+	z-index: 999;
+	display: none;
+}
+
+.cart-info {
+	position: relative;
+	cursor: pointer;
+
+}
+
+.cart-info strong {
+	position: absolute;
+	padding: 5px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 50%;
+	top: -20px;
+	font-size: 10px;
+	right: 0;
+
+}
+
+.show-cart.active {
+	display: block;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.product-info {
+	padding: 10px;
+
+}
+
+.product {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #333;
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+img {
+	border-radius: 50%;
+
+}
+
+.box {
+	margin: 20px;
+	width: 200px;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	border-radius: 5px;
+}
+
+.box .overlay {
+	position: absolute;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.6);
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 35px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.del {
+	cursor: pointer;
+}
+
+.box .overlay.active {
+	display: flex;
+}
+
+p {
+	text-align: center;
+	margin: 10px 0;
+}
+
+.box img {
+	width: 100%;
+	height: 200px;
+}
+
+.product img {
+	width: 70px;
+}

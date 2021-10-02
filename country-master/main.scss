@@ -1,0 +1,138 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 50rem;
+	margin-top: 5rem;
+
+	form {
+		margin-bottom: 3rem;
+		text-align: center;
+
+		input {
+			height: 3.5rem;
+			width: 25rem;
+			border-radius: 3px;
+			border: 1px solid transparent;
+			outline: none;
+			font-size: 1.6rem;
+			padding: 5px;
+		}
+
+		input.wrong {
+			border: 1px solid #f00 !important;
+		}
+	}
+
+	p {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	span {
+		word-break: break-all;
+	}
+
+	&__country {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: #999;
+		border-radius: 1rem;
+		padding: 2rem;
+		flex-wrap: wrap;
+
+		h1 {
+			padding: 0;
+			margin: 0;
+			margin-bottom: 2rem;
+			width: 40rem;
+			overflow: hidden;
+			text-align: center;
+		}
+
+		.main-country {
+			width: 25rem;
+			border-radius: 5px;
+			background-color: #fff;
+			border: 1px solid;
+			box-shadow: 5px 5px 1rem rgba($color: #000000, $alpha: 0.6);
+			margin-bottom: 2rem;
+
+			img {
+				width: 100%;
+				height: 20rem;
+			}
+
+			div {
+				padding: 1rem;
+
+				p {
+					display: flex;
+					justify-content: space-between;
+					padding: 0 1rem;
+					padding-bottom: 5px;
+					font-size: 1.4rem;
+					border-bottom: 1px solid;
+				}
+			}
+		}
+	}
+
+	.neighbour {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		h3 {
+			width: 100%;
+			float: right;
+			text-align: center;
+			font-size: 2rem;
+		}
+
+		.country {
+			width: 20rem;
+			border-radius: 5px;
+			background-color: #fff;
+			border: 1px solid;
+			box-shadow: 5px 5px 1rem rgba($color: #000000, $alpha: 0.6);
+			margin: 1rem;
+
+			img {
+				width: 100%;
+				height: 15rem;
+			}
+
+			div {
+				padding: 1rem;
+
+				p {
+					display: flex;
+					justify-content: space-between;
+					padding: 0 1rem;
+					padding-bottom: 5px;
+					font-size: 1.4rem;
+					border-bottom: 1px solid;
+				}
+			}
+		}
+	}
+}

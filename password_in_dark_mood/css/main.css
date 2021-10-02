@@ -1,0 +1,13 @@
+span {
+  width: 12rem;
+  height: 2rem;
+  text-align: center;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+body {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+}

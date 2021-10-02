@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-color: blueviolet;
+	flex-direction: column;
+}
+
+button {
+	padding: 2rem 3rem;
+	background-color: #fff;
+	color: blueviolet;
+	border: 0;
+	outline: none;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	margin: 2rem;
+
+	span {
+		width: 10rem;
+		height: 10rem;
+		position: absolute;
+		background-color: #000;
+		border-radius: 50%;
+		opacity: 0.6;
+		display: inline-block;
+		// top: 50%;
+		// left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+
+		animation: ripple 0.3s linear;
+	}
+
+	@keyframes ripple {
+		to {
+			transform: translate(-50%, -50%) scale(3);
+			opacity: 0;
+		}
+	}
+}

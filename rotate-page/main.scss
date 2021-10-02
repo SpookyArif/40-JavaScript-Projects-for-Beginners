@@ -1,0 +1,107 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #222;
+	overflow-x: hidden;
+}
+
+.circle {
+	width: 20rem;
+	height: 20rem;
+	background-color: crimson;
+	border-radius: 50%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	left: -115px;
+	top: -30px;
+	padding: 1rem;
+	transition: all 0.3s linear;
+	transform: rotate(0deg);
+	z-index: 99;
+
+	i {
+		font-size: 3rem;
+		cursor: pointer;
+	}
+}
+
+.container {
+	padding: 10rem 0;
+	background-color: #fff;
+	transition: all 0.5s;
+	transform-origin: left top;
+}
+
+.content {
+	width: 70%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 5rem;
+	text-align: center;
+	margin: 3rem 0;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 25px;
+	margin-bottom: 2rem;
+}
+
+img {
+	width: 100%;
+}
+
+nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	ul {
+		list-style: none;
+
+		li {
+			margin-bottom: 1rem;
+			transform: translateX(-150%);
+			transition: 0.5s cubic-bezier(.79, .26, .47, 1.45) 0.2s;
+
+			a {
+				color: #fff;
+				font-size: 1.6rem;
+				text-decoration: none;
+
+				i {
+					font-size: 2rem;
+					color: #fff;
+					display: inline-block;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}
+
+body.active .container {
+	transform: rotate(-15deg);
+}
+
+body.active .circle {
+	transform: rotate(180deg);
+}
+
+body.active nav ul li {
+	transform: translateX(0);
+}
